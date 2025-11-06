@@ -14,13 +14,10 @@ function Navbar() {
           <a href="#programs">Programs</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
           <a href="#schedule">Schedule</a>
         </li>
         <li>
-          <a href="#footer">Footer</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
