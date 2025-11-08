@@ -1,14 +1,20 @@
 .footer {
+  width: 100%;
   background-color: #f7f9f8;
   color: #333;
-  padding: ;
+  padding: 48px 32px 24px;
+  font-family: "Inter", sans-serif;
+  border-top: 1px solid #e0e0e0;
+  box-sizing: border-box; /* ensures padding doesn’t shrink content */
 }
 
 .footer__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1 fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 32px;
-  margin-bottom: 32px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 32px;
 }
 
 .footer__section {
