@@ -38,7 +38,9 @@ function Footer() {
           <li className="footer__list">Schoolage (7 years - 13 years)</li>
         </ul>
       </div>
-      <p>@2025 Kids Garden Daycare. All Rights Reserved.</p>
+      <p className="footer__copyright">
+        @2025 Kids Garden Daycare. All Rights Reserved.
+      </p>
     </footer>
   );
 }
