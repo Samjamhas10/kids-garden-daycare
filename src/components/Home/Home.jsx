@@ -1,3 +1,4 @@
+import homeImage from "../../assets/home-bg.png";
 import "./Home.css";
 
 function Home() {
@@ -5,7 +6,10 @@ function Home() {
     <section id="home" className="home">
       <div className="home__content">
         <h1>Welcome To Kids Garden Daycare</h1>
-        <h3>Where Learning and Fun Go Hand In Hand</h3>
+        <h3>Where Learning & Fun Go Hand In Hand</h3>
+      </div>
+      <div className="home__image">
+        <img src={homeImage} alt="Kids Playing"></img>
       </div>
     </section>
   );

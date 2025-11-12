@@ -14,16 +14,19 @@
 }
 
 .home__content h1 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
   color: #2e473d;
   margin-bottom: 16px;
-  letter-spacing: -0.5px;
 }
 
-.home__content h3 {
-  font-size: 48px;
+.home__content h2 {
+  font-size: 32px;
   font-weight: 500;
-  color: #5f8b4d;
+  color: #4caf50; /* bright green accent */
   margin-top: 0;
+}
+
+.home__image {
+  
 }
