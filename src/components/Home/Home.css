@@ -1,0 +1,29 @@
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f1f8f3;
+  color: #2e473d;
+  padding: 0 32px;
+}
+
+.home__content {
+  max-width: 800px;
+}
+
+.home__content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2e473d;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.home__content h3 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #5f8b4d;
+  margin-top: 0;
+}
