@@ -27,6 +27,9 @@
   margin-top: 0;
 }
 
+.home__content p {
+  margin-top: 16px;
+}
+
 .home__image {
-  
 }
