@@ -16,11 +16,25 @@
 
 ## Project Description
 
-- A frontend application for
+A frontend application allows users to:
+
+- Explore the age-appropriate programs offered, ranging from infants to school-aged children.
+- Read the daycare's story, mission, and values.
+- Navigate easily across sections with a clean, responsive layout.
+
+This project is build with React and styled using modern CSS techniques to ensure a smooth, interactive experience.
 
 ## Project Features
 
-- This project is currently under development, more to come soon!
+- Responsive design for desktop, tablet, and mobile devices.
+
+- Clean and organized Programs section with cards for each age group.
+
+- About section highlighting the founder, story, and daycare philosophy.
+
+- User-friendly navigation with section anchors for smooth scrolling.
+
+- Warm, playful design palette that reflects a kid-friendly environment.
 
 ## Screenshots
 
