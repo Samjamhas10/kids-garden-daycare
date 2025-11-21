@@ -1,0 +1,12 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm__form {
+  /* background-color: #ffffff; */
+}
+
+

@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [Project Description](#project-description)
 - [Project Features](#project-features)
+- [Future Improvements](#future-improvements)
 - [Screenshots](#screenshots)
 - [Live Demo](#live-demo)
 - [Deployment Instructions](#deployment-instructions)
