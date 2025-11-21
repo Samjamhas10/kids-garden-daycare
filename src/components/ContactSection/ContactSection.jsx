@@ -50,7 +50,7 @@ function ContactSection() {
                 Daycare Hours
               </h3>
               <p>Mon - Sun: 7:00AM to 9:30PM</p>
-              <p>Tours availble</p>
+              <p>Tours availble — we accept walk-ins and by appointment</p>
             </div>
           </div>
         </div>

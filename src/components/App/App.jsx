@@ -7,6 +7,7 @@ import AboutSection from "../AboutSection/AboutSection";
 import Program from "../Program/Program";
 import Schedule from "../Schedule/Schedule";
 import ContactSection from "../ContactSection/ContactSection";
+import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../Footer/Footer";
 
 // import styles
@@ -23,6 +24,7 @@ function App() {
       <Program />
       <Schedule />
       <ContactSection />
+      <ContactForm />
       <Footer />
     </div>
   );
