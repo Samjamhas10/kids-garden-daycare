@@ -28,6 +28,19 @@
   font-weight: 600;
 }
 
+.footer__contact-list p {
+  margin: 0 0 8px;
+}
+
+.footer__icon {
+  font-size: 16px;
+  color: #4a7c59;
+}
+
+.footer__icon-flip {
+  transform: scaleX(-1);
+}
+
 .footer__list {
   list-style-type: none;
   padding: 0;

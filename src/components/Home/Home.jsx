@@ -13,8 +13,8 @@ function Home() {
           programs that inspire lifelong learning.
         </p>
       </div>
-      <div className="home__image">
-        <img src={homeImage} alt="Kids Playing"></img>
+      <div className="home__image-container">
+        <img src={homeImage} alt="Kids Playing" className="home__image"></img>
       </div>
     </section>
   );

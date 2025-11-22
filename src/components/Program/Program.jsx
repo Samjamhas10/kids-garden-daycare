@@ -6,7 +6,14 @@ import "./Program.css";
 
 function Program() {
   return (
-    <section id="programs" className="programs">
+    <section
+      id="programs"
+      className="programs"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-offset="150"
+    >
       <div className="programs__container">
         <h2 className="program__heading">Our Programs</h2>
         <h3 className="program__heading-two">

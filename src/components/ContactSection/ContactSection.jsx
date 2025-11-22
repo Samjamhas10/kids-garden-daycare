@@ -3,7 +3,14 @@ import "./ContactSection.css";
 
 function ContactSection() {
   return (
-    <section id="contact" className="contact">
+    <section
+      id="contact"
+      className="contact"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-offset="150"
+    >
       <div className="contact__container">
         <div className="contact__intro">
           <h2 className="contact__heading">

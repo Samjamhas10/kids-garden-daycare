@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 //import components
 import Navbar from "../Navbar/Navbar";
@@ -16,6 +18,16 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-out",
+      offset: 80,
+    });
+  }),
+    [];
 
   return (
     <div className="app">

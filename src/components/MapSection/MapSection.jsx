@@ -3,7 +3,13 @@ import "./MapSection.css";
 
 function MapSection() {
   return (
-    <section className="mapSection">
+    <section
+      className="mapSection"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-offset="150"
+    >
       <div className="mapSection__container">
         <img src={mapIcon} alt="map" />
         <h2>Find Us</h2>

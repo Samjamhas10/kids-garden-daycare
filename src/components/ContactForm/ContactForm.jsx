@@ -29,7 +29,13 @@ function ContactForm() {
   };
 
   return (
-    <section className="contactForm">
+    <section
+      className="contactForm"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-offset="150"
+    >
       <div className="contactForm__card">
         <h2>
           <FaCommentDots className="contactForm__title" />
@@ -135,13 +141,15 @@ function ContactForm() {
             onChange={handleChange}
             required
           ></textarea>
-          <button type="submit" className="contactForm__submit">
-            Submit Message
-          </button>
-          <p className="contactForm__privacy">
-            By submitting this form you agree to our private policy. We'll never
-            share your information.{" "}
-          </p>
+          <div className="contactForm__submission">
+            <button type="submit" className="contactForm__submit">
+              Submit Message
+            </button>
+            <p className="contactForm__privacy">
+              By submitting this form you agree to our private policy. We'll
+              never share your information.{" "}
+            </p>
+          </div>
         </form>
       </div>
     </section>

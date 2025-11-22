@@ -2,7 +2,14 @@ import "./AboutSection.css";
 
 function AboutSection() {
   return (
-    <section id="about" className="about">
+    <section
+      id="about"
+      className="about"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-offset="150"
+    >
       <div className="about__container">
         <div className="about__intro">
           <h2>About Kids Garden Daycare</h2>
