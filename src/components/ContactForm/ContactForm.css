@@ -5,8 +5,61 @@
   align-items: center;
 }
 
-.contactForm__form {
-  /* background-color: #ffffff; */
+.contactForm h2 {
+  margin-bottom: 8px;
+  font-size: 28px;
+  text-align: center;
+  color: #2c4c27;
 }
 
+.contactForm p {
+  margin-bottom: 24px;
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+}
+
+.contactForm__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contactForm__form label,
+.contactForm__form textarea,
+.contactForm__form button {
+  grid-column: span 2;
+}
+
+.contactForm label {
+  font-weight: 600;
+  color: #2c4c27;
+  font-size: 14px;
+}
+
+.contactForm button {
+  color: black;
+}
+
+.contactForm__input,
+.contactForm__select,
+.contactForm__message {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #d8e3d4;
+  border-radius: 10px;
+  transition: border 0.2s ease;
+}
+
+.contactForm__input:focus,
+.contactForm__select:focus,
+.contactForm__message:focus {
+  border-color: #7cb56d;
+  outline: none;
+}
+
+.contactForm__submit:hover {
+  background: #6aa55f;
+}
 

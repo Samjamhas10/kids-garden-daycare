@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaCommentDots } from "react-icons/fa";
 import "./ContactForm.css";
 
 function ContactForm() {
@@ -29,41 +30,45 @@ function ContactForm() {
 
   return (
     <section className="contactForm">
-      <h2>Send Us A Message</h2>
+      <h2>
+        <FaCommentDots className="contactForm__title" />
+        Send Us A Message
+      </h2>
       <p>Have questions or want to scheule a tour? Fill out the form below.</p>
       <form onSubmit={handleSubmit} className="contactForm__form">
-        <label htmlFor="firstname">First Name</label>
+        <label htmlFor="firstname">First Name*</label>
         <input
           type="text"
-          className="modal__input"
-          name="firstName*"
+          className="contactForm__input"
+          name="firstName"
           placeholder="Enter your first name"
           value={formData.firstName}
           onChange={handleChange}
           required
         ></input>
-        <label htmlFor="lastname">Last Name</label>
+        <label htmlFor="lastname">Last Name*</label>
         <input
           type="text"
-          className="modal__input"
+          className="contactForm__input"
           name="lastName"
           placeholder="Enter your last name"
           value={formData.lastName}
           onChange={handleChange}
           required
         ></input>
-        <label htmlFor="emailaddress">Email Address</label>
+        <label htmlFor="emailAddress">Email Address*</label>
         <input
           type="email"
-          className="modal__input"
+          className="contactForm__input"
           name="emailAddress"
           placeholder="your.email@example.com"
           value={formData.emailAddress}
           onChange={handleChange}
           required
         ></input>
+        <label htmlFor="phoneNumber">Phone Number</label>
         <input
-          type="text"
+          type="tel"
           className="contactForm__input"
           name="phoneNumber"
           placeholder="(555) 123-4567"
@@ -71,6 +76,7 @@ function ContactForm() {
           onChange={handleChange}
           required
         ></input>
+        <label htmlFor="childsAge">Child's Age</label>
         <select
           className="contactForm__select"
           name="childsAge"
@@ -85,8 +91,9 @@ function ContactForm() {
           <option value="schoolAge">Pre-K (5 years - 7 years)</option>
           <option value="schoolAge">School Age (7 years - 13 years)</option>
         </select>
+        <label htmlFor="desiredStartDate">Desired Start Date</label>
         <input
-          type="text"
+          type="date"
           className="contactForm__input"
           name="desiredStartDate"
           placeholder="mm/dd/yyyy"
@@ -94,6 +101,7 @@ function ContactForm() {
           onChange={handleChange}
           required
         ></input>
+        <label htmlFor="programInterest">Program Interest</label>
         <select
           className="contactForm__select"
           name="programInterest"
@@ -106,6 +114,7 @@ function ContactForm() {
           <option value="preschool">Preschool</option>
           <option value="schoolAge">School Age</option>
         </select>
+        <label htmlFor="message">Message</label>
         <textarea
           name="message"
           className="contactForm__message"
