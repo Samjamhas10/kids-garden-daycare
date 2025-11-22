@@ -19,17 +19,26 @@
   color: #555;
 }
 
+.contactForm__card {
+  background-color: #ffffff;
+  padding: 50px;
+  text-align: left;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .contactForm__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
-.contactForm__form label,
+/* .contactForm__form label,
 .contactForm__form textarea,
 .contactForm__form button {
   grid-column: span 2;
-}
+} */
 
 .contactForm label {
   font-weight: 600;
@@ -62,4 +71,3 @@
 .contactForm__submit:hover {
   background: #6aa55f;
 }
-
