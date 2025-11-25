@@ -31,7 +31,7 @@ function Footer() {
             </p>
             <p>
               <FaClock className="footer__icon" />
-              Mon - Sun: 7:00AM to 9:30PM
+              Mon - Fri: 6:00 AM to 10:00 PM
             </p>
           </div>
         </div>
