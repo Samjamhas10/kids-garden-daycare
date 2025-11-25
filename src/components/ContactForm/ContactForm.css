@@ -34,12 +34,6 @@
   gap: 16px;
 }
 
-/* .contactForm__form label,
-.contactForm__form textarea,
-.contactForm__form button {
-  grid-column: span 2;
-} */
-
 .contactForm label {
   font-weight: 600;
   color: #2c4c27;

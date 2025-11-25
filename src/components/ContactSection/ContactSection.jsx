@@ -35,7 +35,7 @@ function ContactSection() {
 
             <div className="contact__card">
               <h3>
-                <FaPhone className="contact__icon" />
+                <FaPhone className="contact__icon contact__icon-flip" />
                 Call Us
               </h3>
               <p>(651) 493-4951</p>

@@ -50,6 +50,10 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
+.contact__icon-flip {
+  transform: scaleX(-1);
+}
+
 .contact__card h3 {
   display: flex;
   align-items: center;
