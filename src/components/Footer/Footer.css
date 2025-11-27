@@ -33,8 +33,14 @@
 }
 
 .footer__icon {
+  margin: 0 12px 0 0;
   font-size: 16px;
   color: #4a7c59;
+  transition: transform 0.2s ease;
+}
+
+.footer__icon:hover {
+  transform: scale(1.1);
 }
 
 .footer__icon-flip {
@@ -45,6 +51,11 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.footer__list a:focus {
+  outline: 2px solid #2a5934;
+  outline-offset: 2px;
 }
 
 .footer__list li {

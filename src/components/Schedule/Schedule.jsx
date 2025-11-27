@@ -1,4 +1,4 @@
-import { FaClock } from "react-icons/fa";
+import { FaClock, FaPhone } from "react-icons/fa";
 import "./Schedule.css";
 
 function Schedule() {
@@ -15,7 +15,7 @@ function Schedule() {
         <h2 className="schedule__title">Structured Days, Happy Children</h2>
         <p className="schedule__subtitle">
           Each day is thoughtfully structured to give children the right mix of
-          learning, playtime, rest, and nourshing meals for healthy growth.
+          learning, playtime, rest, and nourishing meals for healthy growth.
         </p>
         <div className="schedule__hours">
           <h3>
@@ -42,7 +42,7 @@ function Schedule() {
             </div>
           </div>
           <p className="schedule__extended">
-            Need care outside of these hours? we offer extended care upon
+            Need care outside of these hours? We offer extended care upon
             request
           </p>
           <button className="schedule__btn">Call for Extended Hours</button>

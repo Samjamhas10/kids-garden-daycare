@@ -11,7 +11,7 @@ function MapSection() {
       data-aos-offset="150"
     >
       <div className="mapSection__container">
-        <img src={mapIcon} alt="map" />
+        <img src={mapIcon} alt="Map icon representing location" />
         <h2>Find Us</h2>
         <p>
           Located in the heart of Saint Paul, we're easy to find and convenient
@@ -19,6 +19,7 @@ function MapSection() {
         </p>
         <iframe
           className="map"
+          title="Kids Garden Daycare Location"
           src="https://www.google.com/maps?q=959+W+Minnehaha+Ave+St+Paul+MN+55104&output=embed"
           width="100%"
           height="400"

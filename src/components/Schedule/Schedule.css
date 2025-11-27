@@ -35,3 +35,29 @@
   font-size: 24px;
   color: #2a5934;
 }
+
+.schedule__icon {
+  font-size: 24px;
+  color: #2a5934;
+}
+
+.schedule__hours-subtitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #777;
+}
+
+.schedule__btn {
+  background: #2a5934;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.schedule__btn:hover {
+  background: #234a2c;
+}

@@ -25,7 +25,6 @@ function Footer() {
               (651) 493-4951
             </p>
             <p>
-              {" "}
               <FaEnvelope className="footer__icon" />
               kidsgardendaycare959@gmail.com
             </p>
