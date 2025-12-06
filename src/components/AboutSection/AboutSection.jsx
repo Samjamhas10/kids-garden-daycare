@@ -26,11 +26,14 @@ function AboutSection() {
           <h3>Our Story</h3>
           <p>
             Founded by early childhood educator Mohamed Gayle, Kids Garden
-            Daycare began as a...
-          </p>
-          <p>
-            Our experienced educators and caregivers love what they do and work
-            tirelessly to help each child thrive and grow.
+            Daycare began as a small community initiative focused on nurturing
+            young learners in a safe and stimulating environment. Over the
+            years, we have grown into a trusted daycare center that combines
+            play-based learning with early academic development. Our mission has
+            always been to create a space where children feel valued, inspired,
+            and supported as they grow. Our experienced educators and caregivers
+            love what they do and work tirelessly to help each child thrive and
+            grow.
           </p>
         </div>
 
