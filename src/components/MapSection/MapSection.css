@@ -6,18 +6,25 @@
   color: #333;
 }
 
-/* .mapSection__container {
+.mapSection__container {
   max-width: 900px;
   margin: 0 auto;
-} */
+}
 
 .mapSection__container img {
   width: 48px;
+  margin-bottom: 20px;
+  /* stroke: #2a5934; */
+}
+
+.mapSection__container h2 {
+  color: #2a5934;
   margin-bottom: 16px;
 }
 
 .mapSection__container p {
   margin-bottom: 24px;
+  font-size: 18px;
   color: #555;
 }
 
@@ -27,4 +34,10 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 400px;
+}
+
+@media (max-width: 600px) {
+  .map {
+    height: 250px;
+  }
 }
