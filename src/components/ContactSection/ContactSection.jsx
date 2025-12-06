@@ -56,8 +56,8 @@ function ContactSection() {
                 <FaClock className="contact__icon" />
                 Daycare Hours
               </h3>
-              <p>Mon - Sun: 7:00AM to 9:30PM</p>
-              <p>Tours availble — we accept walk-ins and by appointment</p>
+              <p>Mon - Fri: 6:00 AM to 10:00 PM</p>
+              <p>Tours available — we accept walk-ins and by appointment</p>
             </div>
           </div>
         </div>
