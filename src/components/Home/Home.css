@@ -56,7 +56,23 @@
     gap: 32px;
     padding: 60px 0;
   }
-  .home__content h1{
+  .home__content h1 {
     font-size: 46px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home__content h1 {
+    font-size: 32px;
+  }
+  .home__content h3 {
+    font-size: 20px;
+  }
+  .home__content p {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+  .home__image {
+    width: min(90%, 300px);
   }
 }
