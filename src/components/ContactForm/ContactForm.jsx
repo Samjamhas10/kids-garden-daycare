@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaCommentDots } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import messageIcon from "../../assets/message-icon.svg";
 import "./ContactForm.css";
 
 function ContactForm() {
@@ -24,8 +25,49 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you! Your message has been sent.");
+
+    const formattedDate = formData.desiredStartDate
+      ? new Date(formData.desiredStartDate).toLocaleDateString("en-US")
+      : "";
+
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      emailAddress: formData.emailAddress,
+      phoneNumber: formData.phoneNumber,
+      childsAge: formData.childsAge,
+      desiredStartDate: formattedDate,
+      programInterest: formData.programInterest,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "service_xib4zig", // Your Service ID
+        "template_xkdlsqb", // Your Template ID
+        templateParams,
+        "BZLmOYcgyRD9-csUP" // Your Public Key / User ID
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Thank you! Your message has been sent.");
+          setFormData({
+            firstName: "",
+            lastName: "",
+            emailAddress: "",
+            phoneNumber: "",
+            childsAge: "",
+            desiredStartDate: "",
+            programInterest: "",
+            message: "",
+          });
+        },
+        (err) => {
+          console.log("FAILED...", err);
+          alert("Oops! Something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
@@ -37,15 +79,13 @@ function ContactForm() {
       data-aos-offset="150"
     >
       <div className="contactForm__card">
-        <h2>
-          <FaCommentDots className="contactForm__title" />
-          Send Us A Message
-        </h2>
+        <img src={messageIcon} alt="Message icon representing contact" />
+        <h2>Send Us A Message</h2>
         <p>
-          Have questions or want to scheule a tour? Fill out the form below.
+          Have questions or want to schedule a tour? Fill out the form below.
         </p>
         <form onSubmit={handleSubmit} className="contactForm__form">
-          <label htmlFor="firstname">First Name*</label>
+          <label htmlFor="firstName">First Name*</label>
           <input
             id="firstName"
             type="text"
@@ -102,8 +142,7 @@ function ContactForm() {
             <option value="infants">Infants (0 - 12 months)</option>
             <option value="toddlers">Toddler (12 months - 3 years)</option>
             <option value="preschool">Preschool (3 years - 5 years)</option>
-            <option value="schoolAge">Pre-K (5 years - 7 years)</option>
-            <option value="schoolAge">School Age (7 years - 13 years)</option>
+            <option value="schoolAge">School Age (5 years - 13 years)</option>
           </select>
           <label htmlFor="desiredStartDate">Desired Start Date</label>
           <input
@@ -142,11 +181,15 @@ function ContactForm() {
             required
           ></textarea>
           <div className="contactForm__submission">
-            <button type="submit" className="contactForm__submit">
+            <button
+              type="submit"
+              className="contactForm__submit"
+              aria-label="Submit contact form"
+            >
               Submit Message
             </button>
             <p className="contactForm__privacy">
-              By submitting this form you agree to our private policy. We'll
+              By submitting this form you agree to our privacy policy. We'll
               never share your information.{" "}
             </p>
           </div>

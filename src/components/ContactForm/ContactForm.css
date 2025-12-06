@@ -28,6 +28,13 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.contactForm__card img {
+  display: block;
+  width: 39px;
+  height: auto;
+  margin: 0 auto 20px auto;
+}
+
 .contactForm__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -70,6 +77,18 @@
   margin-top: 16px;
 }
 
+.contactForm__submit {
+  background: #7cb56d;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
 .contactForm__submit:hover {
   background: #6aa55f;
 }
@@ -79,4 +98,10 @@
   font-size: 16px;
   color: #555;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contactForm__form {
+    grid-template-columns: 1fr;
+  }
 }
