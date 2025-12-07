@@ -38,7 +38,7 @@
   color: #5f8b4d;
 }
 
-.navbar__cta .navbar__button {
+.navbar__button {
   padding: 8px 36px; /* vertical 8px, horizontal 36px */
   background-color: #4caf50;
   color: #fff;
@@ -51,4 +51,60 @@
 
 .navbar__cta .navbar__button:hover {
   background-color: #45a049;
+}
+
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.navbar__hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar__hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar__hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.navbar__hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 0;
+    opacity: 0;
+  }
+
+  .navbar__links.active {
+    display: flex;
+    padding: 20px 0;
+    gap: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  .navbar__links li {
+    margin: 0;
+    text-align: center;
+  }
 }

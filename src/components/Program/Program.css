@@ -8,7 +8,6 @@
 
 /* programs container */
 .programs__container {
-  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -32,6 +31,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 28px;
   margin-top: 40px;
+  padding: 20px;
   background-color: #f9fafb;
 }
 
@@ -40,7 +40,7 @@
   background-color: #ffffff;
   padding: 28px;
   border-radius: 18px;
-  box-shadow: 0 4px 14 px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 

@@ -56,7 +56,7 @@ function Program() {
             <img src={preschoolImg} alt="Preschool" />
             <h3>Preschool</h3>
             <p>
-              Play-based learning that builds early academi skills and school
+              Play-based learning that builds early academic skills and school
               readiness.{" "}
             </p>
             <ul className="program__features">
