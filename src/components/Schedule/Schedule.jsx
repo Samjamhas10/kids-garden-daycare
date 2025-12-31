@@ -25,7 +25,7 @@ function Schedule() {
           <p className="schedule__hours-subtitle">
             We're here when you need us most
           </p>
-          <div className="schedule__hoursGrid">
+          <div className="schedule__hours-grid">
             <div>
               <h4>Monday – Friday</h4>
               <p>6:00 AM – 10:00 PM</p>
@@ -43,16 +43,19 @@ function Schedule() {
           </div>
           <p className="schedule__extended">
             Need care outside of these hours? We offer extended care upon
-            request
+            request.
           </p>
-          <button className="schedule__btn">Call for Extended Hours</button>
+          {/* <a href="tel:+6514934951" className="schedule__btn">
+            <FaPhone className="schedule__btn-icon" />
+            Call for Extended Hours
+          </a> */}
         </div>
-        <div className="schedule__age-tabs">
+        {/* <div className="schedule__age-tabs">
           <button>Infants</button>
           <button>Toddlers</button>
           <button>Preschool</button>
           <button>School Age</button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
