@@ -1,68 +1,54 @@
 # Kids Garden Daycare: Frontend Application
 
+A modern, responsive web application showcasing Kids Garden Daycare's programs, values, and services for parents seeking quality childcare.
+
 ## Table of Contents
 
 - [Overview](#overview)
-- [Project Description](#project-description)
-- [Project Features](#project-features)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
 - [Future Improvements](#future-improvements)
-- [Screenshots](#screenshots)
-- [Live Demo](#live-demo)
-- [Deployment Instructions](#deployment-instructions)
 - [System Requirements](#system-requirements)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Overview
 
-- Kids Garden Daycare is a modern, responsive web application built to showcase the daycare’s programs, values, and services for parents seeking a nurturing environment for their children.
+Kids Garden Daycare is a modern, responsive web application built to showcase the daycare's programs, values, and services for parents seeking a nurturing environment for their children. The site highlights age-appropriate programs, the daycare's mission, and provides an intuitive user experience.
 
-## Project Description
+## Features
 
-A frontend application allows users to:
+- Responsive Design - Works seamlessly on desktop, tablet, and mobile devices
+- Program Showcase - Clean, organized cards for each age group (Infants to School Age)
+- About Section - Founder story, mission statement, and daycare philosophy
+- Kid-Friendly Design - Warm, playful color palette and engaging visuals
+- Smooth Navigation - Section anchors for instant scrolling to relevant content
+- Mobile Menu - Responsive navigation for all screen sizes
 
-- Explore the age-appropriate programs offered, ranging from infants to school-aged children.
-- Read the daycare's story, mission, and values.
-- Navigate easily across sections with a clean, responsive layout.
+## Tech Stack
 
-This project is build with React and styled using modern CSS techniques to ensure a smooth, interactive experience.
+- React 19.x - UI library
+- CSS3 - Modern styling with responsive design
+- Vite - Fast build tool and dev server
+- react-icons - Icon library for UI elements
+- ESLint - Code quality and consistency
 
-## Project Features
+## Getting Started
 
-- Responsive design for desktop, tablet, and mobile devices.
+### System Requirements
 
-- Clean and organized Programs section with cards for each age group.
+- Node.js: v23.11.0 or higher
+- npm: 10.9.2 or higher
+- Operating System: Linux, macOS, or Windows
 
-- About section highlighting the founder, story, and daycare philosophy.
-
-- User-friendly navigation with section anchors for smooth scrolling.
-
-- Warm, playful design palette that reflects a kid-friendly environment.
-
-## Screenshots
-
-## Live Demo
-
-## Deployment Instructions
+### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Samjamhas10/kids-garden-daycare/tree/main
+   git clone https://github.com/Samjamhas10/kids-garden-daycare.git
+   cd kids-garden-daycare
    ```
-
-2. Navigate to project directory:
-
-   `cd kids-garden-daycare`
-
-3. Install dependencies
-
-   `npm install`
-
-4. launch the server with the hot reload feature
-
-   `npm run dev`
-
-## System Requirements
-
-- Node.js: v23.11.0 or higher
-- npm: 10.9.2v or higher
-- Operating system (Linux, macOS, Windows)
