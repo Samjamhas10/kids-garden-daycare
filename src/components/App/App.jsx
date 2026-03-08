@@ -26,8 +26,7 @@ function App() {
       easing: "ease-out",
       offset: 80,
     });
-  }),
-    [];
+  }, []);
 
   return (
     <div className="app">
