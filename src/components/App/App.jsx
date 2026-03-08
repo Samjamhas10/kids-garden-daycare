@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-//import components
+// Import components
 import Navbar from "../Navbar/Navbar";
 import Home from "../Home/Home";
 import AboutSection from "../AboutSection/AboutSection";
@@ -13,12 +13,10 @@ import ContactForm from "../ContactForm/ContactForm";
 import MapSection from "../MapSection/MapSection";
 import Footer from "../Footer/Footer";
 
-// import styles
+// Import styles
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   useEffect(() => {
     AOS.init({
       duration: 800,
