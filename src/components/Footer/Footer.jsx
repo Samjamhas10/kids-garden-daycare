@@ -1,4 +1,5 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { DAYCARE_INFO, QUICK_LINKS, PROGRAMS } from "../../../constants";
 import "./Footer.css";
 
 function Footer() {
@@ -16,58 +17,47 @@ function Footer() {
           <div className="footer__contact-list">
             <p>
               <FaMapMarkerAlt className="footer__icon" />
-              959 W. Minnehaha Ave
-              <br />
-              St. Paul, MN 55104
+              {DAYCARE_INFO.address}
             </p>
             <p>
               <FaPhone className="footer__icon footer__icon-flip" />
-              (651) 493-4951
+              {DAYCARE_INFO.phone}
             </p>
             <p>
               <FaEnvelope className="footer__icon" />
-              kidsgardendaycare959@gmail.com
+              {DAYCARE_INFO.email}
             </p>
             <p>
               <FaClock className="footer__icon" />
-              Mon - Fri: 6:00 AM to 10:00 PM
+              {DAYCARE_INFO.hours}
             </p>
           </div>
         </div>
         <div className="footer__section">
           <h3 className="footer__title">Quick Links</h3>
           <ul className="footer__list">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#programs">Programs</a>
-            </li>
-            <li>
-              <a href="#schedule">Schedule</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+            {QUICK_LINKS.map((link) => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="footer__section">
           <h3 className="footer__title">Our Programs</h3>
           <ul className="footer__list">
-            <li>Infants (0 - 12 months)</li>
-            <li>Toddlers (12 months - 3 years)</li>
-            <li>Preschool (3 - 5 years)</li>
-            <li>School Age (5 - 13 years)</li>
+            {PROGRAMS.map((program) => (
+              <li key={program.name}>
+                {program.name} ({program.age})
+              </li>
+            ))}
           </ul>
         </div>
       </div>
 
       <div>
         <p className="footer__copyright">
-          @2025 Kids Garden Daycare LLC. All Rights Reserved.
+          {DAYCARE_INFO.copyright}
         </p>
       </div>
     </footer>
