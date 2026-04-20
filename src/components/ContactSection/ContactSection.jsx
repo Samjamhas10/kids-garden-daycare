@@ -2,6 +2,10 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 import "./ContactSection.css";
 
 function ContactSection() {
+  const addressLines = ["959 W. Minnehaha Ave", "St. Paul, MN 55104"];
+  const addressQuery = encodeURIComponent(addressLines.join(" "));
+  const mapsHref = `https://www.google.com/maps/search/?api=1&query=${addressQuery}`;
+
   return (
     <section
       id="contact"
@@ -19,18 +23,27 @@ function ContactSection() {
           <p className="contact__subheading">
             Ready to explore what we have to offer?
           </p>
+
           <div className="contact__list">
             <div className="contact__card">
               <h3>
                 <FaMapMarkerAlt className="contact__icon" />
                 Visit Us
               </h3>
+
               <address>
-                959 W. Minnehaha Ave
-                <br />
-                St. Paul, MN 55104
+                <a href={mapsHref} target="_blank" rel="noreferrer">
+                  {addressLines[0]}
+                  <br />
+                  {addressLines[1]}
+                </a>
               </address>
-              <p>Located in the heart of Saint Paul</p>
+
+              <p>
+                <a href={mapsHref} target="_blank" rel="noreferrer">
+                  Get directions
+                </a>
+              </p>
             </div>
 
             <div className="contact__card">
@@ -38,7 +51,9 @@ function ContactSection() {
                 <FaPhone className="contact__icon contact__icon-flip" />
                 Call Us
               </h3>
-              <p>(651) 493-4951</p>
+              <p>
+                <a href="tel:+16514934951">(651) 493-4951</a>
+              </p>
               <p>Call us anytime during open hours — we’re happy to help!</p>
             </div>
 
@@ -47,7 +62,11 @@ function ContactSection() {
                 <FaEnvelope className="contact__icon" />
                 Email Us
               </h3>
-              <p>kidsgardendaycare959@gmail.com</p>
+              <p>
+                <a href="mailto:kidsgardendaycare959@gmail.com">
+                  kidsgardendaycare959@gmail.com
+                </a>
+              </p>
               <p>We respond within 1-2 business days</p>
             </div>
 
