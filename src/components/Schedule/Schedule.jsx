@@ -1,4 +1,4 @@
-import { FaClock, FaPhone } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
 import "./Schedule.css";
 
 function Schedule() {
